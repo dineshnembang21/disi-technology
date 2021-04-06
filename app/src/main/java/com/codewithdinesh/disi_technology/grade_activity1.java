@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.view.View;
 
 public class grade_activity1 extends AppCompatActivity {
-Button btn_sub;
+Button btn_sub,btn_sub1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +21,17 @@ Button btn_sub;
             @Override
             public void onClick(View v) {
                 Intent in=new Intent(grade_activity1.this,subject_activity2.class);
+                startActivity(in);
+
+            }
+        });
+
+        btn_sub1=(Button) findViewById(R.id.activity2);
+
+        btn_sub1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in=new Intent(grade_activity1.this,compulsory_maths.class);
                 startActivity(in);
 
             }

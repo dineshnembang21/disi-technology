@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class index_activity3 extends AppCompatActivity {
 
-    Button btn_algebra;
+    Button btn_algebra,btn_matrix;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,5 +27,16 @@ public class index_activity3 extends AppCompatActivity {
                 startActivity(in);
             }
         });
+
+        btn_matrix=(Button) findViewById(R.id.button13);
+
+        btn_matrix.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in=new Intent(index_activity3.this,matrix_pdf.class);
+                startActivity(in);
+            }
+        });
+
     }
 }
