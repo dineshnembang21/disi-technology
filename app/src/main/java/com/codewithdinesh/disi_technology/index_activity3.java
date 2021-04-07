@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class index_activity3 extends AppCompatActivity {
 
-    Button btn_algebra,btn_matrix;
+    Button btn_algebra,btn_matrix,btn_prev1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,18 @@ public class index_activity3 extends AppCompatActivity {
                 startActivity(in);
             }
         });
+
+
+        btn_prev1=(Button) findViewById(R.id.prev2);
+
+        btn_prev1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in=new Intent(index_activity3.this,subject_activity2.class);
+                startActivity(in);
+            }
+        });
+
 
     }
 }
